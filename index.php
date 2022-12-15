@@ -1,3 +1,11 @@
+<?php
+    $arr_google = [
+        [
+            'domanda' => 
+        ]
+    ]
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
