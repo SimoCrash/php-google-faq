@@ -35,6 +35,12 @@
                                 utenti europei quando cercano la maggior parte dei nomi, non soltanto le pagine che sono state soggette a una
                                 rimozione.</p>
                             ciao,
+                            'commenti' => [
+                                'bello<br>',
+                                'wow<br>',
+                                'w google<br>',
+                                'grazie<br>',
+                            ]
         ],
         [
             'domanda'  => '<h2 class="SbNcad">Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?</h2>',
@@ -55,6 +61,12 @@
                                 tue informazioni personali, lasciando a te il controllo.</p>
                             <div id="associated-country" class="ahbJ5"></div>
                             ciao,
+                            'commenti' => [
+                                'bello<br>',
+                                'wow<br>',
+                                'w google<br>',
+                                'grazie<br>',
+                            ]
         ],
         [
             'domanda'  => '<h2 class="SbNcad">Perché il mio account è associato a un paese?</h2>',
@@ -86,6 +98,12 @@
                                     href="country-association-form">Contattaci</a> se ritieni che il paese associato al tuo account sia
                                 sbagliato.</p>
                             ciao,
+                            'commenti' => [
+                                'bello<br>',
+                                'wow<br>',
+                                'w google<br>',
+                                'grazie<br>',
+                            ]
         ],
         [
             'domanda'  => '<h2 class="SbNcad">Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?</h2>',
@@ -103,6 +121,12 @@
                             inoltre possibile <a href="https://support.google.com/websearch/troubleshooter/3111061?hl=it">visitare la nostra
                                 pagina di assistenza per avere ulteriori informazioni</a>.</p>
                             ciao,
+                            'commenti' => [
+                                'bello<br>',
+                                'wow<br>',
+                                'w google<br>',
+                                'grazie<br>',
+                            ]
         ],
         [
             'domanda'  => '<h2 class="SbNcad">Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate
@@ -120,6 +144,12 @@
                             Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole
                             chiave che hanno determinato il clic su un annuncio.</p>
                             ciao,
+                            'commenti' => [
+                                'bello<br>',
+                                'wow<br>',
+                                'w google<br>',
+                                'grazie<br>',
+                            ]
         ]
     ];
 ?>
@@ -133,6 +163,15 @@
     <title>Google FAQ</title>
 </head>
 <body>
-    
+    <?php
+        foreach($arr_google as $value){
+            echo $value['domanda'];
+            echo $value['risposta'];
+            echo '<h3>Commenti</h3>';
+            foreach($value['commenti'] as $val){
+                echo $val;
+            }
+        }
+    ?>
 </body>
 </html>
